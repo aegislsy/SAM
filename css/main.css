@@ -1,5 +1,4 @@
 html {
-  margin: 0;
   scroll-behavior: smooth;
 }
 body {
@@ -7,10 +6,9 @@ body {
   margin: 0;
   padding: 0;
 }
-.contain {
-  display: block;
-  margin: 0;
-  text-align: center;
+ul {
+  display: flex;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -18,6 +16,11 @@ a {
 }
 a:active {
   color: inherit;
+}
+.contain {
+  display: block;
+  margin: 0;
+  text-align: center;
 }
 nav {
   position: fixed;
@@ -30,45 +33,41 @@ nav {
   align-items: center;
   align-content: space-between;
 }
-ul {
-  display: flex;
-  list-style: none;
+nav img {
+  width: 20%;
 }
-
 nav > ul > li {
   margin-right: 30px;
   font-weight: 600;
   color: black;
 }
 #main {
-  margin: 0;
-  width: 100vw;
-  height: 900px;
+  width: 100%;
+  height: 100vh;
   background-color: #e5dfe8;
 }
 #about {
-  margin: 0;
-  width: 100vw;
-  height: 900px;
+  width: 100%;
+  height: 100vh;
   background-color: #d8dde6;
 }
-#about img {
-  width: 100%;
-}
+
 #work {
-  margin: 0;
-  width: 100vw;
-  height: 900px;
+  width: 100%;
+  height: 100vh;
   background-color: #e5dfe8;
 }
 #contact {
-  margin: 0;
-  width: 100vw;
-  height: 900px;
-  background-color: #aaaaaa;
+  width: 100%;
+  height: 20vh;
+  background-color: white;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  color: #2a2b2a;
 }
 #contact img {
-  width: 30px;
+  height: 30px;
+  margin: 2vh;
+  color: inherit;
 }
