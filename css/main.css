@@ -1,7 +1,16 @@
+html {
+  margin: 0;
+  scroll-behavior: smooth;
+}
 body {
   background: tomato;
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0;
+  padding: 0;
+}
+.contain {
+  display: block;
+  margin: 0;
+  text-align: center;
 }
 a {
   text-decoration: none;
@@ -11,7 +20,8 @@ a:active {
   color: inherit;
 }
 nav {
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
   width: 100vw;
   height: 10vh;
   background: white;
@@ -20,7 +30,7 @@ nav {
   align-items: center;
   align-content: space-between;
 }
-nav > ul {
+ul {
   display: flex;
   list-style: none;
 }
@@ -29,4 +39,36 @@ nav > ul > li {
   margin-right: 30px;
   font-weight: 600;
   color: black;
+}
+#main {
+  margin: 0;
+  width: 100vw;
+  height: 900px;
+  background-color: #e5dfe8;
+}
+#about {
+  margin: 0;
+  width: 100vw;
+  height: 900px;
+  background-color: #d8dde6;
+}
+#about img {
+  width: 100%;
+}
+#work {
+  margin: 0;
+  width: 100vw;
+  height: 900px;
+  background-color: #e5dfe8;
+}
+#contact {
+  margin: 0;
+  width: 100vw;
+  height: 900px;
+  background-color: #aaaaaa;
+  display: flex;
+  justify-content: space-between;
+}
+#contact img {
+  width: 30px;
 }
