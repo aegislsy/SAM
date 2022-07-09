@@ -161,12 +161,10 @@ nav > ul > li {
   margin: 1vh;
   color: inherit;
 }
-@media (max-width: 585px) {
+/* Mobile Device */
+@media all and (min-width: 480px) and (max-width: 767px) {
   #contact {
     display: block;
-  }
-  #contact img {
-    height: 2vh;
   }
   #contact ul {
     justify-content: center;
