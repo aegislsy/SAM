@@ -45,7 +45,7 @@ nav img {
   width: 20%;
 }
 nav > ul > li {
-  margin-right: 30px;
+  margin-right: 8vw;
   font-weight: 600;
   color: black;
 }
@@ -73,7 +73,6 @@ nav > ul > li {
 #work {
   width: 100%;
   height: 100vh;
-  padding-top: 10%;
 }
 .workContainer {
   position: relative;
@@ -128,8 +127,8 @@ nav > ul > li {
 /* scroll to top button */
 .scrollTop {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 3vh;
+  right: 5vw;
   padding: 15px;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid black;
@@ -157,7 +156,7 @@ nav > ul > li {
   color: rgba(0, 0, 0, 0.5);
 }
 #contact img {
-  height: 30px;
+  height: 4vh;
   margin: 2vh;
   color: inherit;
 }
