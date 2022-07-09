@@ -123,6 +123,22 @@ nav > ul > li {
   width: 20%;
 }
 
+/* scroll to top button */
+.scrollTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5 ease 0s;
+}
+.scrollTop:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
 /* footer */
 #contact {
   width: 100%;
