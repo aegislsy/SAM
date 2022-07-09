@@ -161,7 +161,7 @@ nav > ul > li {
   margin: 1vh;
   color: inherit;
 }
-@media (max-width: 500px) {
+@media (max-width: 585px) {
   #contact {
     display: block;
   }
