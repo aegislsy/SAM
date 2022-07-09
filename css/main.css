@@ -150,6 +150,7 @@ nav > ul > li {
   align-items: center;
   color: #2a2b2a;
 }
+
 #contact p:last-child {
   font-size: 11px;
   margin-top: -15px;
@@ -157,6 +158,18 @@ nav > ul > li {
 }
 #contact img {
   height: 4vh;
-  margin: 2vh;
+  margin: 1vh;
   color: inherit;
+}
+@media (max-width: 500px) {
+  #contact {
+    display: block;
+  }
+  #contact img {
+    height: 2vh;
+  }
+  #contact ul {
+    justify-content: center;
+    padding: 0%;
+  }
 }
