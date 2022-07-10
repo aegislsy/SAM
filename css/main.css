@@ -35,7 +35,7 @@ nav {
   top: 0;
   width: 100vw;
   height: 10vh;
-  background: rgb(0, 0, 0.5);
+  background: black;
   color: white;
   display: flex;
   justify-content: center;
@@ -67,7 +67,9 @@ nav .openMenu {
   display: none;
   cursor: pointer;
 }
-
+nav .closeMenu {
+  display: none;
+}
 /* mobile device*/
 @media (max-width: 800px) {
   nav .mainMenu {
@@ -79,7 +81,7 @@ nav .openMenu {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgb(0, 0, 0.2);
+    background: black;
     transition: top 1s ease 0s;
     display: none;
   }
