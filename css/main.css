@@ -68,7 +68,7 @@ nav .openMenu {
   cursor: pointer;
 }
 nav .closeMenu {
-  opacity: 0;
+  display: none;
 }
 /* mobile device*/
 @media (max-width: 800px) {
@@ -95,6 +95,7 @@ nav .closeMenu {
     display: block;
   }
   nav .closeMenu {
+    display: block;
     font-size: 2em;
   }
 }
