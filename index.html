@@ -8,18 +8,26 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o="
+      crossorigin="anonymous"
+    />
     <title>Portfolio</title>
   </head>
   <body>
     <div class="contain">
       <!--Menu-->
       <nav>
-        <div><img src="img/logo.png" /></div>
-        <ul>
-          <li><a href="#main">MAIN</a></li>
-          <li><a href="#work">WORK</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
+        <div class="logo"><img src="img/logo_main.png" /></div>
+        <div class="openMenu"><i class="fa fa-bars"></i></div>
+        <ul class="mainMenu">
+          <li class="menu"><a href="#main">MAIN</a></li>
+          <li class="menu"><a href="#work">WORK</a></li>
+          <li class="menu"><a href="#about">ABOUT</a></li>
+          <li class="menu"><a href="#contact">CONTACT</a></li>
+          <div class="closeMenu"><i class="fa fa-times"></i></div>
         </ul>
       </nav>
       <!--Main Page-->
@@ -85,6 +93,6 @@
         window.scrollTo(0, 0);
       }
     </script>
-    <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

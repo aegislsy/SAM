@@ -35,21 +35,67 @@ nav {
   top: 0;
   width: 100vw;
   height: 10vh;
-  background: white;
+  background: rgb(0, 0, 0.5);
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: space-between;
+  justify-content: space-between;
 }
-nav img {
-  width: 20%;
+.logo {
+  margin-left: 5%;
 }
-nav > ul > li {
+.logo img {
+  width: 2em;
+}
+.menu {
   margin-right: 8vw;
-  font-weight: 600;
-  color: black;
+  font-weight: 700;
+  display: inline-block;
+  padding: 15px;
+  color: white;
+  transition: 0.2s ease;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
 }
 
+nav .openMenu {
+  font-size: 2rem;
+  margin-right: 5%;
+  display: none;
+  cursor: pointer;
+}
+
+/* mobile device*/
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0.2);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .closeMenu {
+    font-size: 2em;
+  }
+}
 /* main section */
 #main {
   width: 100%;
@@ -157,14 +203,15 @@ nav > ul > li {
   color: rgba(0, 0, 0, 0.5);
 }
 #contact img {
-  height: 4vh;
+  height: 3em;
   margin: 1vh;
   color: inherit;
 }
-/* Mobile Device */
-@media all and (min-width: 480px) and (max-width: 767px) {
+/* mobile device */
+@media (max-width: 800px) {
   #contact {
     display: block;
+    overflow: hidden;
   }
   #contact ul {
     justify-content: center;
