@@ -93,10 +93,13 @@ nav .closeMenu {
   }
   nav .openMenu {
     display: block;
+    padding-right: 5%;
   }
   nav .closeMenu {
     display: block;
     font-size: 2em;
+    padding-right: 5%;
+  }
   }
 }
 /* main section */
@@ -141,21 +144,27 @@ nav .closeMenu {
   width: 100%;
   height: 100vh;
   padding-top: 10vh;
-
 }
 .workContainer {
   position: relative;
   width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+  flex-flow: row wrap;
 }
-
 .work {
+  display: flex;
   justify-content: center;
   align-items: center;
   background: black;
   color: white;
-  border-radius: 2em;
   overflow: hidden;
+  margin: 0;
+  width: 30vw;
+  height: 30vh;
 }
 
 .work:nth-child(1) {
