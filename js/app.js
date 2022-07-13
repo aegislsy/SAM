@@ -12,6 +12,7 @@ menu_items.forEach((item) => {
   });
 });
 
+/* Scroll to top */
 function show() {
   mainMenu.style.display = "flex";
   mainMenu.style.top = "0";
@@ -19,3 +20,18 @@ function show() {
 function close() {
   mainMenu.style.top = "-100%";
 }
+
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
+/* Prevent user sizing */
+document.addEventListener(
+  "touchmove",
+  function (event) {
+    if (event.scale !== 1) {
+      event.preventDefault();
+    }
+  },
+  false
+);
