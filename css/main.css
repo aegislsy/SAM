@@ -1,4 +1,4 @@
-/* global */
+/* Global */
 html {
   scroll-behavior: smooth;
 }
@@ -27,8 +27,18 @@ a:active {
   margin: 0;
   text-align: center;
 }
-
-/* navigation bar */
+.back {
+  width: 40vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 5%;
+  z-index: -99;
+  filter: blur(4px);
+  display: block;
+  margin: 0px auto;
+}
+/* Navigation bar */
 nav {
   z-index: 99;
   position: fixed;
@@ -60,7 +70,6 @@ nav .mainMenu {
   display: flex;
   list-style: none;
 }
-
 nav .openMenu {
   font-size: 2rem;
   margin-right: 5%;
@@ -70,7 +79,7 @@ nav .openMenu {
 nav .closeMenu {
   display: none;
 }
-/* mobile device*/
+/* Mobile device*/
 @media (max-width: 800px) {
   nav .mainMenu {
     height: 100vh;
@@ -100,9 +109,8 @@ nav .closeMenu {
     font-size: 2em;
     padding-right: 5%;
   }
-  }
 }
-/* main section */
+/* Main section */
 #main {
   width: 100%;
   height: 100vh;
@@ -132,14 +140,7 @@ nav .closeMenu {
   width: 20vw;
   z-index: 1;
 }
-#main img {
-  width: 40vw;
-  position: fixed;
-  margin-top: 5%;
-  z-index: -99;
-  filter: blur(4px);
-}
-/* lastesst works container and cards*/
+/* Lastesst works container and cards*/
 #work {
   width: 100%;
   height: 100vh;
@@ -166,7 +167,6 @@ nav .closeMenu {
   width: 30vw;
   height: 30vh;
 }
-
 .work:nth-child(1) {
   background-image: url("../img/card1.jpg");
   background-size: cover;
@@ -191,7 +191,7 @@ nav .closeMenu {
   background-image: url("../img/card6.jpg");
   background-size: cover;
 }
-/* about section */
+/* About section */
 #about {
   width: 100%;
   height: 100vh;
@@ -203,8 +203,7 @@ nav .closeMenu {
 #about img {
   width: 30vw;
 }
-
-/* scroll to top button */
+/* Scroll to top button */
 .scrollTop {
   position: fixed;
   bottom: 3vh;
@@ -220,7 +219,7 @@ nav .closeMenu {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
-/* footer */
+/* Footer */
 #contact {
   width: 100%;
   height: 10%;
@@ -231,7 +230,6 @@ nav .closeMenu {
   align-items: center;
   color: #2a2b2a;
 }
-
 #contact p:last-child {
   font-size: 11px;
   margin-top: -15px;
@@ -242,7 +240,7 @@ nav .closeMenu {
   margin: 1vh;
   color: inherit;
 }
-/* mobile device */
+/* Mobile device */
 @media (max-width: 800px) {
   #contact {
     display: block;
