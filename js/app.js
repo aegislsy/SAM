@@ -1,3 +1,4 @@
+
 /* resposive menu */
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
@@ -53,7 +54,7 @@ let swiperworks = new Swiper(".works__container", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  loop:true,
+  loop: true,
 
   navigation: {
     nextEl: ".swiper-button-next",

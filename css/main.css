@@ -31,24 +31,17 @@ a:active {
 }
 .contain {
   display: block;
-  width: 100%;
+  width: 100vw;
   position: absolute;
   margin: 0;
   text-align: center;
 }
 .section__title {
   margin-bottom: 5rem;
+  margin-top: 5rem;
 }
-.back {
-  width: 40vw;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  margin-top: 5%;
-  z-index: -99;
-  filter: blur(4px);
-  display: block;
-  margin: 0px auto;
+.blank {
+  padding: 1rem;
 }
 /* Navigation bar */
 nav {
@@ -102,11 +95,11 @@ nav .closeMenu {
   padding-top: 10vh;
   justify-content: center;
   align-items: center;
+  background: hsla(220, 18%, 45%, 0.15);
 }
 /*=============== HOME ===============*/
 .home {
   overflow: hidden;
-  transition: 0.4s; /*For animation dark mode*/
 }
 
 .home__container {
@@ -115,7 +108,7 @@ nav .closeMenu {
 }
 
 .home__title {
-  font-size: 10rem;
+  font-size: 10vw;
   font-weight: 800;
 }
 
@@ -132,6 +125,7 @@ nav .closeMenu {
 #work {
   height: 100vh;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 .works__container {
   padding: 4rem 0;
@@ -198,7 +192,6 @@ nav .closeMenu {
 /* ------------------- ASIDE -------------------- */
 .contact__aside {
   background: black;
-  padding: 3rem;
   position: relative;
   bottom: 0rem;
   text-align: center;
@@ -214,11 +207,6 @@ nav .closeMenu {
   margin-bottom: 1rem;
 }
 
-.contact__aside p {
-  font-size: 0.9rem;
-  margin-bottom: 2rem;
-}
-
 .contact__details li {
   display: grid;
   gap: 1rem;
@@ -229,7 +217,7 @@ nav .closeMenu {
 .contact__socials {
   display: flex;
   gap: 0.8rem;
-  margin-top: 3rem;
+  margin-top: 2.8rem;
   justify-content: space-evenly;
 }
 
@@ -360,7 +348,10 @@ textarea {
 }
 
 /* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
+  .home__title {
+    font-size: 20vw;
+  }
   nav .mainMenu {
     height: 30vh;
     position: fixed;
@@ -390,6 +381,7 @@ textarea {
     padding-right: 5%;
   }
   #footer {
+    margin-top: -7rem;
     display: block;
     overflow-x: hidden;
   }
@@ -411,16 +403,19 @@ textarea {
     width: 40vh;
   }
   .contact__container {
+    height: 100vh;
     grid-template-columns: 1fr;
     gap: 3rem;
-    margin-top: 2rem;
   }
-
   .contact__form {
     margin: 0 1.5rem 3rem;
   }
 
   .form__name input {
     width: 100%;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
   }
 }
