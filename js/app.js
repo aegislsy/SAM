@@ -35,3 +35,23 @@ document.addEventListener(
   },
   false
 );
+
+/*=============== SWIPER workS ===============*/
+let swiperworks = new Swiper(".works__container", {
+  spaceBetween: 32,
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  breakpoints: {
+    1024: {
+      spaceBetween: 32,
+    },
+  },
+});

@@ -36,6 +36,9 @@ a:active {
   margin: 0;
   text-align: center;
 }
+.section__title {
+  margin-bottom: 5rem;
+}
 .back {
   width: 40vw;
   position: fixed;
@@ -119,155 +122,52 @@ nav .closeMenu {
   width: 20vw;
   z-index: 1;
 }
-/* Lastesst works container and cards*/
+/* Lastest works container and cards*/
 #work {
-  width: 100%;
   height: 100vh;
-  padding-top: 10vh;
+  margin: 0 auto;
 }
-.workContainer {
-  position: relative;
-  width: 100%;
-  height: 80%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
-}
-.work {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: black;
-  color: white;
-  margin: 0;
-  width: 30vw;
-  height: 30vh;
-}
-.work:nth-child(1) {
-  background-image: url("../img/card1.jpg");
-  background-size: cover;
-}
-.work:nth-child(2) {
-  background-image: url("../img/card2.jpg");
-  background-size: cover;
-}
-.work:nth-child(3) {
-  background-image: url("../img/card3.jpg");
-  background-size: cover;
-}
-.work:nth-child(4) {
-  background-image: url("../img/card4.jpg");
-  background-size: cover;
-}
-.work:nth-child(5) {
-  background-image: url("../img/card5.jpg");
-  background-size: cover;
-}
-.work:nth-child(6) {
-  background-image: url("../img/card6.jpg");
-  background-size: cover;
-}
-/* About section */
-#about {
-  width: 100%;
-  height: 100vh;
-  padding-top: 10vh;
-  justify-content: center;
-  align-items: center;
+.works__container {
+  padding-bottom: 5rem;
 }
 
-#about img {
-  width: 30vw;
+.works__card {
+  width: 270px;
 }
-/* Scroll to top button */
-.scrollTop {
-  position: fixed;
-  bottom: 3vh;
-  right: 5vw;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.5 ease 0s;
+
+.works__img {
+  width: 200px;
+  margin-bottom: 1rem;
 }
-.scrollTop:hover {
-  background-color: rgba(0, 0, 0, 0.9);
-  color: white;
+
+.works__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.75rem;
 }
-/* Footer */
-#footer {
-  width: 100%;
-  height: 10%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #2a2b2a;
+
+.works__price {
+  color: var(--title-color);
+  font-weight: var(--font-medium);
 }
-#footer p:last-child {
-  margin-top: -15px;
-  color: rgba(0, 0, 0, 0.5);
+/* Swiper class */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "";
 }
-#footer img {
-  height: 3em;
-  margin: 1vh;
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: initial;
+  bottom: 0;
+  width: initial;
+  height: initial;
+  font-size: 1.5rem;
   color: inherit;
 }
-.copyright {
-  padding: 1rem;
-}
-@media (max-width: 800px) {
-  nav .mainMenu {
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    transition: top 1s ease 0s;
-    display: none;
-  }
-  nav .mainMenu .closeMenu {
-    display: block;
-    position: absolute;
-    top: 2vh;
-    right: 2vw;
-  }
-  nav .openMenu {
-    display: block;
-    padding-right: 5%;
-  }
-  nav .closeMenu {
-    display: block;
-    font-size: 2em;
-    padding-right: 5%;
-  }
-  #footer {
-    display: block;
-    overflow-x: hidden;
-  }
-  #footer ul {
-    justify-content: center;
-    padding: 0%;
-  }
-  .workContainer {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    overflow: hidden;
-    flex-flow: row wrap;
-  }
-  .work {
-    margin: 1rem;
-    width: 40vh;
-  }
+
+/* Contact section */
+#contact {
+  margin-top: 2rem;
 }
 
 .contact__container {
@@ -288,7 +188,7 @@ nav .closeMenu {
   padding: 3rem;
   border-radius: 1rem;
   position: relative;
-  bottom: 10rem;
+  bottom: 0rem;
 }
 
 .aside__image {
@@ -372,6 +272,96 @@ textarea {
   width: max-content;
   margin-top: 1rem;
   cursor: pointer;
+}
+/* Scroll to top button */
+.scrollTop {
+  position: fixed;
+  bottom: 3vh;
+  right: 5vw;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5 ease 0s;
+}
+.scrollTop:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+/* Footer */
+#footer {
+  width: 100%;
+  height: 10%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2a2b2a;
+}
+#footer p:last-child {
+  margin-top: -15px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#footer img {
+  height: 3em;
+  margin: 1vh;
+  color: inherit;
+}
+.copyright {
+  padding: 1rem;
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 2vh;
+    right: 2vw;
+  }
+  nav .openMenu {
+    display: block;
+    padding-right: 5%;
+  }
+  nav .closeMenu {
+    display: block;
+    font-size: 2em;
+    padding-right: 5%;
+  }
+  #footer {
+    display: block;
+    overflow-x: hidden;
+  }
+  #footer ul {
+    justify-content: center;
+    padding: 0%;
+  }
+  .worksContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    overflow: hidden;
+    flex-flow: row wrap;
+  }
+  .works {
+    margin: 1rem;
+    width: 40vh;
+  }
 }
 
 /* ------------------- MEDIA QUERIES(TABLET) -------------------- */
