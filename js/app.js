@@ -1,3 +1,4 @@
+/* resposive menu */
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
 const openMenu = document.querySelector(".openMenu");
@@ -36,7 +37,7 @@ document.addEventListener(
   false
 );
 
-/*=============== SWIPER workS ===============*/
+/* works slide */
 let swiperworks = new Swiper(".works__container", {
   spaceBetween: 32,
   grabCursor: true,

@@ -100,28 +100,31 @@ nav .closeMenu {
   justify-content: center;
   align-items: center;
 }
-.mainTitle {
-  width: 100%;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-weight: 600;
-  font-size: 3vw;
+/*=============== HOME ===============*/
+.home {
+  overflow: hidden;
+  transition: 0.4s; /*For animation dark mode*/
 }
-.line {
-  position: absolute;
-  width: 60vw;
-  height: 80vh;
-  border: 2px solid black;
-  margin-top: 10vh;
+
+.home__container {
+  padding: 4rem 0 1rem;
+  row-gap: 8.5rem;
 }
-#main h1 {
-  padding-left: 5%;
-  width: 20vw;
-  z-index: 1;
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 800;
 }
+
+.home__description {
+  margin: 1rem 0 2rem;
+}
+
+.home__title,
+.home__description {
+  line-height: 140%;
+}
+
 /* Lastest works container and cards*/
 #work {
   height: 100vh;
@@ -136,7 +139,7 @@ nav .closeMenu {
 }
 
 .works__img {
-  width: 200px;
+  width: 300px;
   margin-bottom: 1rem;
 }
 
