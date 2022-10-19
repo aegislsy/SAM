@@ -1,7 +1,7 @@
 /* Global */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 auto;
   border: 0;
   outline: 0;
   text-decoration: none;
@@ -63,6 +63,9 @@ nav {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+}
+nav a:hover {
+  text-decoration: line-through;
 }
 .logo {
   margin-left: 5%;
@@ -131,7 +134,7 @@ nav .closeMenu {
   margin: 0 auto;
 }
 .works__container {
-  padding-bottom: 5rem;
+  padding: 4rem 0;
 }
 
 .works__card {
@@ -140,7 +143,12 @@ nav .closeMenu {
 
 .works__img {
   width: 300px;
+  height: 430px;
   margin-bottom: 1rem;
+}
+
+.works__card:hover {
+  transform: scale(1.2);
 }
 
 .works__title {
@@ -165,12 +173,15 @@ nav .closeMenu {
   width: initial;
   height: initial;
   font-size: 1.5rem;
-  color: inherit;
+  color: var(--title-color);
 }
 
-/* Contact section */
-#contact {
-  margin-top: 2rem;
+.swiper-button-prev {
+  left: calc(50% - 2rem);
+}
+
+.swiper-button-next {
+  right: calc(50% - 2rem);
 }
 
 .contact__container {
@@ -189,7 +200,6 @@ nav .closeMenu {
 .contact__aside {
   background: black;
   padding: 3rem;
-  border-radius: 1rem;
   position: relative;
   bottom: 0rem;
 }
@@ -254,6 +264,9 @@ nav .closeMenu {
   gap: 1.2rem;
 }
 
+.form__name::placeholder {
+  color: #2a2b2a;
+}
 .contact__form input[type="text"] {
   width: 50%;
 }
@@ -279,18 +292,20 @@ textarea {
 /* Scroll to top button */
 .scrollTop {
   position: fixed;
-  bottom: 3vh;
-  right: 5vw;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.5 ease 0s;
+  right: 1rem;
+  bottom: 15%;
+  background-color: white;
+  box-shadow: 0 8px 12px hsla(220, 18%, 45%, 0.15);
+  display: inline-flex;
+  padding: 0.35rem;
+  font-size: 1.1rem;
+  z-index: 1;
+  transition: 0.3s;
 }
 .scrollTop:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: white;
+  transform: translateY(-1rem);
 }
 /* Footer */
 #footer {
@@ -301,6 +316,9 @@ textarea {
   justify-content: center;
   align-items: center;
   color: #2a2b2a;
+}
+#footer p {
+  font-size: small;
 }
 #footer p:last-child {
   margin-top: -15px;
@@ -314,9 +332,36 @@ textarea {
 .copyright {
   padding: 1rem;
 }
-@media (max-width: 800px) {
+
+/* ------------------- MEDIA QUERIES(TABLET) -------------------- */
+@media screen and (max-width: 1024px) {
+  .contact {
+    padding-bottom: 0;
+  }
+
+  .contact__container {
+    gap: 1.5rem;
+    margin-top: 3rem;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .contact__aside {
+    width: auto;
+    padding: 1.5rem;
+    bottom: 0;
+  }
+
+  .contact__form {
+    align-self: center;
+    margin-right: 1.5rem;
+  }
+}
+
+/* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
+@media screen and (max-width: 600px) {
   nav .mainMenu {
-    height: 100vh;
+    height: 30vh;
     position: fixed;
     top: 0px;
     right: 0px;
@@ -351,7 +396,7 @@ textarea {
     justify-content: center;
     padding: 0%;
   }
-  .worksContainer {
+  .works__container{
     position: relative;
     width: 100%;
     height: 100%;
@@ -360,45 +405,16 @@ textarea {
     gap: 2rem;
     overflow: hidden;
     flex-flow: row wrap;
+    margin-top: -7rem;
   }
   .works {
     margin: 1rem;
     width: 40vh;
   }
-}
-
-/* ------------------- MEDIA QUERIES(TABLET) -------------------- */
-@media screen and (max-width: 1024px) {
-  .contact {
-    padding-bottom: 0;
-  }
-
-  .contact__container {
-    gap: 1.5rem;
-    margin-top: 3rem;
-    height: auto;
-    padding: 1.5rem;
-  }
-
-  .contact__aside {
-    width: auto;
-    padding: 1.5rem;
-    bottom: 0;
-  }
-
-  .contact__form {
-    align-self: center;
-    margin-right: 1.5rem;
-  }
-}
-
-/* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
-@media screen and (max-width: 600px) {
   .contact__container {
     grid-template-columns: 1fr;
     gap: 3rem;
-    margin-top: 0;
-    padding: 0;
+    margin-top: 2rem;
   }
 
   .contact__form {

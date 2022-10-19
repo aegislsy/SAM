@@ -34,8 +34,8 @@
       color="#5bbad5"
     />
     <!-- style -->
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -94,19 +94,10 @@
                 src="img/t5.jpg"
                 alt="works image"
                 class="works__img"
+                onclick="window.open(this.src)"
               />
               <h2 class="works__title">T5 Promotion</h2>
-              <span class="works__price">Desgin</span>
-            </article>
-
-            <article class="works__card swiper-slide">
-              <img
-                src="img/haniel.png"
-                alt="product image"
-                class="works__img"
-              />
-              <h2 class="works__title">Haniel Main</h2>
-              <span class="works__price">Publishing</span>
+              <span class="works__type">Desgin</span>
             </article>
 
             <article class="works__card swiper-slide">
@@ -114,9 +105,10 @@
                 src="img/active2.jpg"
                 alt="works image"
                 class="works__img"
+                onclick="window.open(this.src)"
               />
               <h2 class="works__title">Actice2 Promotion</h2>
-              <span class="works__price"></span>Design</span>
+              <span class="works__type"></span>Design & Publishing</span>
             </article>
 
             <article class="works__card swiper-slide">
@@ -126,14 +118,14 @@
               class="works__img"
               />
               <h2 class="works__title">Kakao Clone</h2>
-              <a href="https://aegislsy.github.io/kokoa-clone/">
-              <span class="works__price">Publishing</span>
+              <a href="https://aegislsy.github.io/kokoa-clone/ " type="_blank">
+              <span class="works__type">Publishing</span>
             </a>
             </article>
           </div>
 
-          <div class="swiper-button-next"><i class="ri-arrow-right-line"></i></div>
-          <div class="swiper-button-prev"><i class="ri-arrow-left-line"></i></div>
+          <div class="swiper-button-next"> <i class="fas fa-chevron-right"></i> </div>
+          <div class="swiper-button-prev"> <i class="fas fa-chevron-left"></i></div>
 
         </div>
       </section>
@@ -177,13 +169,13 @@
               <input
                 type="text"
                 name="First Name"
-                plcaceholder="First Name"
+                placeholder="First Name"
                 required
               />
               <input
                 type="text"
                 name="Last Name"
-                plcaceholder="Last Name"
+                placeholder="Last Name"
                 required
               />
             </div>
@@ -204,7 +196,7 @@
       </section>
 
       <!--Scroll to Top button-->
-      <div onclick="scrollToTop()" class="scrollTop">Top</div>
+      <div onclick="scrollToTop()" class="scrollTop"><i class="fas fa-chevron-up"></i> </div>
       
       <!--Contact Page-->
       <footer id="footer">

@@ -26,6 +26,17 @@ function scrollToTop() {
   window.scrollTo(0, 0);
 }
 
+/*=============== SHOW SCROLL UP ===============*/
+const scrollUp = () => {
+  const scrollUp = document.getElementById("scroll-up");
+  // When the scroll is higher than 350 viewport height, add the show-scroll class to the a tag with the scrollup class
+  this.scrollY >= 350
+    ? scrollUp.classList.add("show-scroll")
+    : scrollUp.classList.remove("show-scroll");
+};
+window.addEventListener("scroll", scrollUp);
+
+
 /* Prevent user sizing */
 document.addEventListener(
   "touchmove",
@@ -43,7 +54,6 @@ let swiperworks = new Swiper(".works__container", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
-  loop: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -52,7 +62,7 @@ let swiperworks = new Swiper(".works__container", {
 
   breakpoints: {
     1024: {
-      spaceBetween: 32,
+      spaceBetween: 72,
     },
   },
 });
