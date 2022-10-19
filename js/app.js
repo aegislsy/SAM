@@ -36,7 +36,6 @@ const scrollUp = () => {
 };
 window.addEventListener("scroll", scrollUp);
 
-
 /* Prevent user sizing */
 document.addEventListener(
   "touchmove",
@@ -54,6 +53,7 @@ let swiperworks = new Swiper(".works__container", {
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop:true,
 
   navigation: {
     nextEl: ".swiper-button-next",
