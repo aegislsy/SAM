@@ -1,4 +1,3 @@
-
 /* resposive menu */
 const mainMenu = document.querySelector(".mainMenu");
 const closeMenu = document.querySelector(".closeMenu");
@@ -50,7 +49,7 @@ document.addEventListener(
 
 /* works slide */
 let swiperworks = new Swiper(".works__container", {
-  spaceBetween: 32,
+  spaceBetween: 80,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
@@ -63,7 +62,7 @@ let swiperworks = new Swiper(".works__container", {
 
   breakpoints: {
     1024: {
-      spaceBetween: 72,
+      spaceBetween: 90,
     },
   },
 });
