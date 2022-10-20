@@ -10,7 +10,7 @@
 }
 html {
   scroll-behavior: smooth;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 body {
   width: 100%;
@@ -195,11 +195,17 @@ nav .closeMenu {
 
 /* contact section*/
 #contact {
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
+  display: inline-block;
+}
+#contact h2 {
+  margin-top: 5rem;
 }
 
 /* ------------------- ASIDE -------------------- */
 .contact__aside {
+  height: 30vh;
   background: black;
   position: relative;
   bottom: 0rem;
@@ -333,6 +339,13 @@ textarea {
 
 /* ------------------- MEDIA QUERIES(TABLET) -------------------- */
 @media screen and (max-width: 1024px) {
+  #work {
+    overflow: hidden;
+  }
+
+  #contact h2 {
+    margin-top: 0;
+  }
   .contact {
     padding-bottom: 0;
   }
@@ -357,7 +370,7 @@ textarea {
 }
 
 /* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
   .home__title {
     font-size: 20vw;
   }
@@ -389,13 +402,8 @@ textarea {
     font-size: 2em;
     padding-right: 5%;
   }
-  #footer {
-    display: block;
-    overflow-x: hidden;
-  }
-  #footer ul {
-    justify-content: center;
-    padding: 0%;
+  #work {
+    overflow: hidden;
   }
   .works__container {
     position: relative;
@@ -410,13 +418,23 @@ textarea {
     margin: 1rem;
     width: 40vh;
   }
+  #contact {
+    height: 100vh;
+    overflow: hidden;
+  }
+  #contact h2 {
+    margin-top: 0;
+  }
+
   .contact__container {
     height: 100vh;
     grid-template-columns: 1fr;
     gap: 3rem;
   }
   .contact__form {
-    margin: 0 1.5rem 3rem;
+    height: auto;
+    margin: 0;
+    margin-top: -25rem;
   }
 
   .form__name input {
@@ -424,6 +442,16 @@ textarea {
   }
   .btn {
     display: flex;
+  }
+
+  #footer {
+    padding-bottom: 1rem;
+    display: block;
+    height: 15vh;
+    overflow: hidden;
+  }
+  #footer ul {
     justify-content: center;
+    padding: 0%;
   }
 }
