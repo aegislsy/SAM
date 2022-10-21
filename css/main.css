@@ -360,6 +360,7 @@ textarea {
     overflow: hidden;
   }
   .works__container {
+    
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
@@ -368,12 +369,9 @@ textarea {
     flex-flow: row wrap;
     margin-top: -7rem;
   }
-  .works {
-    margin: 1rem;
-    width: 40vh;
-  }
+  
   #contact {
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
   }
   #contact h2 {
