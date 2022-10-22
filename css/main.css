@@ -66,7 +66,12 @@ nav a:hover {
 }
 .logo {
   margin-left: 5%;
+  transition: 0.2s;
 }
+.logo:hover {
+  transform: rotate(90deg);
+}
+
 .logo img {
   width: 2em;
 }
@@ -99,15 +104,6 @@ nav .closeMenu {
   padding-top: 10vh;
   justify-content: center;
   align-items: center;
-  /*
-  background: radial-gradient(
-    ellipse at right bottom,
-    #a9cce3 0%,
-    #a3e4d7 25%,
-    #f5b041 50%,
-    #a9cce3 100%
-  );
-  */
   background-color: #252839;
   display: flex;
 }
@@ -175,14 +171,10 @@ nav .closeMenu {
 }
 
 .works__title {
-  font-size: var(--h3-font-size);
+  font-size: medium;
   margin-bottom: 0.75rem;
 }
 
-.works__price {
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-}
 /* Swiper class */
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -343,7 +335,9 @@ textarea {
 }
 /* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
 @media screen and (max-width: 750px) {
-  
+  .section__title {
+    margin-bottom: 5rem;
+  }
   nav .mainMenu {
     height: 30vh;
     position: fixed;
@@ -372,7 +366,13 @@ textarea {
     font-size: 2em;
     padding-right: 5%;
   }
-  
+  #work {
+    overflow: hidden;
+  }
+  .works__container {
+    flex-flow: row wrap;
+    margin-top: -7rem;
+  }
 
   #contact {
     height: 100%;

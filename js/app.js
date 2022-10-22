@@ -76,4 +76,5 @@ const sr = ScrollReveal({
   //reset: true
 });
 
-sr.reveal(".contact__container", { origin: "bottom" });
+sr.reveal(".works__container");
+sr.reveal(".contact__container");
