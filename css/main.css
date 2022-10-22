@@ -42,7 +42,6 @@ textarea {
   text-align: center;
 }
 .section__title {
-  margin-bottom: 5rem;
   margin-top: 10vh;
 }
 .blank {
@@ -143,17 +142,14 @@ nav .closeMenu {
 }
 
 .works__card {
-  width: 270px;
+  width: 300px;
 }
 
 .works__img {
   width: 300px;
   height: 400px;
   margin-bottom: 1rem;
-}
-
-.works__card:hover {
-  transform: scale(1.2);
+  border-radius: 1rem;
 }
 
 .works__title {
@@ -360,16 +356,10 @@ textarea {
     overflow: hidden;
   }
   .works__container {
-    
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    overflow: hidden;
     flex-flow: row wrap;
     margin-top: -7rem;
   }
-  
+
   #contact {
     height: 100%;
     overflow: hidden;
