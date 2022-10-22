@@ -48,11 +48,12 @@ document.addEventListener(
 );
 
 /* works slide */
-let swiperworks = new Swiper(".works__container", {
-  spaceBetween: 72,
+let swiperProducts = new Swiper(".works__container", {
+  spaceBetween: 32,
   grabCursor: true,
   centeredSlides: true,
   slidesPerView: "auto",
+  loop: true,
 
   navigation: {
     nextEl: ".swiper-button-next",
@@ -61,7 +62,7 @@ let swiperworks = new Swiper(".works__container", {
 
   breakpoints: {
     1024: {
-      spaceBetween: 32,
+      spaceBetween: 72,
     },
   },
 });
@@ -75,5 +76,4 @@ const sr = ScrollReveal({
   //reset: true
 });
 
-sr.reveal(".works__card", { interval: 100 });
 sr.reveal(".contact__container", { origin: "bottom" });
