@@ -99,6 +99,7 @@ nav .closeMenu {
   padding-top: 10vh;
   justify-content: center;
   align-items: center;
+  /*
   background: radial-gradient(
     ellipse at right bottom,
     #a9cce3 0%,
@@ -106,6 +107,41 @@ nav .closeMenu {
     #f5b041 50%,
     #a9cce3 100%
   );
+  */
+  background-color: #252839;
+  display: flex;
+}
+#main h2 {
+  position: relative;
+  font-size: 14vw;
+  color: #252839;
+  -webkit-text-stroke: 0.3vw #383d52;
+  text-transform: uppercase;
+}
+#main h2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  color: #01fe87;
+  -webkit-text-stroke: 0vw #383d52;
+  border-right: 2px solid #01fe87;
+  overflow: hidden;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
 }
 
 .home {
@@ -115,20 +151,6 @@ nav .closeMenu {
 .home__container {
   padding: 10rem 1rem;
   row-gap: 8.5rem;
-}
-
-.home__title {
-  font-size: 10vw;
-  font-weight: 800;
-}
-
-.home__description {
-  margin: 1rem 0 2rem;
-}
-
-.home__title,
-.home__description {
-  line-height: 140%;
 }
 
 /* Lastest works container and cards*/
@@ -217,7 +239,7 @@ form {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -227,7 +249,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: 2px solid #f5b041;
+  border: 2px solid black;
 }
 
 textarea {
@@ -252,7 +274,7 @@ textarea {
   font-weight: 700;
 }
 [type="submit"]:hover {
-  background: #f5b041;
+  background: #00df77;
   color: rgba(0, 0, 0, 0.9);
 }
 /* Scroll to top button */
@@ -321,9 +343,9 @@ textarea {
 }
 /* ------------------- MEDIA QUERIES(MOBILE) -------------------- */
 @media screen and (max-width: 750px) {
-  .home__title {
-    font-size: 20vw;
-  }
+  .section__title {
+    margin-bottom: 5rem;
+  } 
   nav .mainMenu {
     height: 30vh;
     position: fixed;

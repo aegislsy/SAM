@@ -75,6 +75,5 @@ const sr = ScrollReveal({
   //reset: true
 });
 
-sr.reveal(".home__data");
 sr.reveal(".works__card", { interval: 100 });
 sr.reveal(".contact__container", { origin: "bottom" });
